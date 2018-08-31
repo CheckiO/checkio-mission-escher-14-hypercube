@@ -1,0 +1,81 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}hypercube.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+The solid door slowly opened after the painted key was accepted and ... Here it is - the Main Warehouse! You’ve come a long and hard way to get here. There is very little left and the artifact will be yours.<br>
+<br>
+The pedestal upon which stood the Hypercube didn’t fit into the castle’s interiors. It was a high-tech column above which hovered the Cube in a cylinder of bluish light without any visible support. Most likely, the cylinder is a force field, which has to be turned off in order to take the Cube.<br>
+"Did Lord Escher actually die? What if he just went back to his home planet?", - the thought has involuntarily entered your mind. But there was no time for reflection. You can’t rule out the possibility of the owner’s ghost trying to stop you on your way back, so you have got to hurry.<br>
+<br>
+When you took a few steps closer to the Cube and were getting ready to reach out, you suddenly felt like you’ve bumped into something invisible, yet impenetrable. Was the Hypercube surrounded by another force field?!<br>
+Well, you have to find a way to turn it off.
+</div>
+
+<p>
+When you’ve touched an outer invisible force field, a rectangle consisting of letters appeared on it. While you were looking at these letters, their set had changed. It seems that every 10 seconds the letter box automatically reboots. You need to wait for the moment when you can clearly read 'Hypercube' on the field - this will be the short window during which the field is deactivated and you can pass.<br>
+<br>
+Your function receives an array of letters as an argument. Your task is to return True if it’s possible to read the word 'Hypercube' in this array, and False if otherwise.
+The 'Hypercube' is in the array only if the word "hypercube" can be read/compiled from an unbroken letter line. In addition, the line can bend at a 90-degree angle, but can’t go diagonally. It’s completely case insensitive.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Array of the letters.
+</p>
+
+<p>
+    <strong>Output: </strong> True or False.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]) == True
+hypercube([
+              ['H', 'a', 't', 's', 'E'],
+              ['a', 'Y', 'p', 'u', 'B'],
+              ['a', 'a', 'P', 'y', 'U'],
+              ['x', 'x', 'x', 'E', 'C'],
+              ['z', 'z', 'z', 'z', 'R']]) == False
+</pre>
+{% else %}
+<pre class="brush: python">
+hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]) == True
+hypercube([
+              ['H', 'a', 't', 's', 'E'],
+              ['a', 'Y', 'p', 'u', 'B'],
+              ['a', 'a', 'P', 'y', 'U'],
+              ['x', 'x', 'x', 'E', 'C'],
+              ['z', 'z', 'z', 'z', 'R']]) == False
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For the lexicographic analisys.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    array size == 5x5
+</p>

@@ -1,0 +1,34 @@
+"use strict";
+
+function hypercube(grid) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]), true)
+    assert.equal(hypercube([
+              ['H', 'a', 't', 's', 'E'],
+              ['a', 'Y', 'p', 'u', 'B'],
+              ['a', 'a', 'P', 'y', 'U'],
+              ['x', 'x', 'x', 'E', 'C'],
+              ['z', 'z', 'z', 'z', 'R']]), false)
+
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
+
