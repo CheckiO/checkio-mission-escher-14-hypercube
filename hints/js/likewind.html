@@ -1,0 +1,31 @@
+
+<body data-author="likewind">
+<div class="question-answer">
+    <div class="question">
+        How should I start to solve this mission?
+    </div>
+    <div class="answer">
+        At first, you could convert all letters to the lowercase to ignore their initial case, as task description said.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        What should I do with this converted array?
+    </div>
+    <div class="answer">
+        You could check if all of the letters of word 'hypercube' are in the array.
+If even 1 letter is not the array - return false and don't continue the analysis.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        I've checked this. How will I know that from this letters I could build a word 'hypercube'?
+    </div>
+    <div class="answer">
+Start the analysis from one of the 'h' which you've found. Then check 4 nearest neighbours of this letter - does any of them == 'y'. Then check 4 neighbours of the 'y' and so on. If all letters of the word 'hypercube' can create one chain - return true, else - return false.
+    </div>
+</div>
+
+</body>
