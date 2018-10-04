@@ -1,0 +1,104 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}hypercube.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+あなたが描いた鍵をスクリーンが認識すると堅いドアがゆっくりと開きました。
+ここは…主要貯蔵庫です!
+ここに至る道のりは長く険しいものでした。
+あと少しでアーティファクトはあなたのもです。<br>
+<br>
+城の内装に似つかわしくないハイパーキューブが台座の上にありました。
+このハイテクノロジーの柱の上部には青みがかった光の筒の中に支えも無しに立方体が浮遊しています。
+恐らくこの筒は力場であり立方体を入手するには消しさる必要がありそうです。<br>
+「本当にエッシャー卿は死んだのだろうか?」
+もし彼が今まさにこの世に帰ってきたなら?
+このような考えがあなたの心に沸き起こりました。
+しかしそれについて考えている時間はありません。
+領主の亡霊が帰路を邪魔する可能性を無視できないので急ぐ必要があります。<br>
+<br>
+立方体に数歩近づいてそれを取ろうとしたとき、
+あなたは突然何か見えないものにぶつかりました。
+ハイパーキューブは他の力場に囲まれているのでしょうか?<br>
+どうやらあなたはまずこれを消し去る方法を探す必要があるようです。<br>
+見えない力場に触れたとき、
+文字でできた長方形が現れました。
+これらの文字を見ている間、それらは変化しました。
+どうやらこの文字を表示している箱は10秒ごとに自動的に再起動しているようです。
+あなたはハイパーキューブとはっきり読み取れるときまで待つ必要があります。
+その際に力場が停止し通過可能な短い窓口が現れます。
+</div>
+<p>
+あなたの仕事は文字の配列を引数として受け取り、
+ 'Hypercube' の単語が読み取れる場合に True、そうでない場合には False を返す関数を作ることです。
+
+この 'Hypercube' は配列の中で途切れることない一続きの文字列として読み取れる場合のみ 単語 'Hypercube' と見なします。
+
+この一続きの文字列は 90度に曲げることは可能です。
+しかし斜めは不可能です。また大文字と小文字を区別しません。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}cube.jpg" style="max-height: 200px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> 文字の配列
+</p>
+
+<p>
+    <strong>出力: </strong> 真偽値 ( True か False )
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]) == true
+hypercube([
+              ['H', 'a', 't', 's', 'E'],
+              ['a', 'Y', 'p', 'u', 'B'],
+              ['a', 'a', 'P', 'y', 'U'],
+              ['x', 'x', 'x', 'E', 'C'],
+              ['z', 'z', 'z', 'z', 'R']]) == false
+</pre>
+{% else %}
+<pre class="brush: python">
+hypercube([
+              ['g', 'f', 'H', 'Y', 'v'],
+              ['z', 'e', 'a', 'P', 'u'],
+              ['s', 'B', 'T', 'e', 'y'],
+              ['k', 'u', 'c', 'R', 't'],
+              ['l', 'O', 'k', 'p', 'r']]) == True
+hypercube([
+              ['H', 'a', 't', 's', 'E'],
+              ['a', 'Y', 'p', 'u', 'B'],
+              ['a', 'a', 'P', 'y', 'U'],
+              ['x', 'x', 'x', 'E', 'C'],
+              ['z', 'z', 'z', 'z', 'R']]) == False
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    辞書的な分析に使えます。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    3x3 <= array size <= 5x5
+</p>
