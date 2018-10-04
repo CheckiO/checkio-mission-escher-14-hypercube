@@ -207,7 +207,6 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                 js: 'hypercube'
             },
             animation: function($expl, data){
-                console.log(data.ext);
                 hyperCubeCanvas($expl[0],
                     data.in, data.ext.answer);
             }
